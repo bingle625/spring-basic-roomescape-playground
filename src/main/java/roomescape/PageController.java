@@ -13,11 +13,7 @@ import roomescape.member.Member;
 @Controller
 public class PageController {
     @GetMapping("/admin")
-    public String admin(LoginMember member, HttpServletResponse response) throws IOException {
-        if (member.getRole().equals("USER")) {
-            response.sendError(401);
-            return null; // 상태 코드만 반환, 템플릿 렌더링 방지
-        }
+    public String admin() {
         return "admin/index";
     }
 
