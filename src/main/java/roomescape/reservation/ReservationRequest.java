@@ -21,4 +21,8 @@ public class ReservationRequest {
     public Long getTime() {
         return time;
     }
+
+    public void setName(final String name) {
+        this.name = name;
+    }
 }
